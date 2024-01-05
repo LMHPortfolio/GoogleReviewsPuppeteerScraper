@@ -1,15 +1,13 @@
-import { Puppeteer } from "puppeteer";
-import { fs } from "fs/promises";
-//const puppeteer = require("puppeteer");
-//const fs = require("fs/promises");
-import { propURLs } from "./PropURLList";
+const puppeteer = require("puppeteer");
+const fs = require("fs/promises");
+const propURLs = require("propURLList");
 
 try {
   async function start() {
     for (let i = 0; i < propURLs.length; i++) {
       const url = propURLs[i].url;
 
-      const browser = await Puppeteer.launch({ headless: "new" });
+      const browser = await puppeteer.launch({ headless: "new" });
       const page = await browser.newPage();
       await page.goto(`${url}`);
       await page.waitForNavigation({ waitUntil: "networkidle2" });
@@ -18,7 +16,7 @@ try {
       const score = await page.evaluate(() => {
         return Array.from(
           document.querySelectorAll(
-            "div.F7nice > span:nth-child(1) > span:nth-child(1)"
+            "div.fYOrjf.kp-hc > div:nth-child(2) > div > div > span.Aq14fc"
           )
         ).map((x) => x.textContent);
       });
@@ -26,7 +24,9 @@ try {
       //Update with new elements for the property google reviews
       const totalCount = await page.evaluate(() => {
         return Array.from(
-          document.querySelectorAll("div.F7nice > span:nth-child(2)")
+          document.querySelectorAll(
+            "div.fYOrjf.kp-hc > div:nth-child(2) > div > div > span.hqzQac > span > a > span"
+          )
         ).map((x) => x.textContent);
       });
 

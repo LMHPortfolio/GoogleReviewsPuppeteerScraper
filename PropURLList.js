@@ -1,4 +1,4 @@
-export const propURLs = [
+const propURLs = [
   {
     id: 2007,
     name: "Country Gardens",
@@ -435,6 +435,8 @@ export const propURLs = [
     url: "https://www.google.com/search?q=town+west+senior+living&oq=town+west+senior+living&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxNDVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
 ];
+
+module.exports = propURLs;
 
 //map over the object to extract the url only
 

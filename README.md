@@ -41,7 +41,7 @@ In your directory, you will see a CSV file created. The first one will be titled
 If the file already exists, the program will write to that pre-existing file. It will only create a new one if it does not yet exist. 
 It will not "overwrite" existing content, but it will add to what is already in a pre-existing CSV with that same name.
 **I recommend renaming the file once the scrape is successful so you don't confuse different versions.
-While the program is running, you will see a blank cursor in your terminal. This is normal and means the program is actively running. There is no visual "progress" indicator, 
+While the program is running, you will see a blank cursor in your terminal. This is normal and means the program is actively running. As of the current version, there is no visual "progress" indicator, 
 but you can view your progress in writing to the CSV file by opening the file that was created and seeing the rows populate.
 
 In the instance that you need to STOP the program from running, type CONTROL+C into the terminal. Think of this as the emergency break. Otherwise, just wait for the CSV file write process to be complete.

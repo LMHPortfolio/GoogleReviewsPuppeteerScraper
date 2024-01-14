@@ -13,7 +13,7 @@ Dependencies:
 3) terminal to run the scripts using Node commands. I recommend using GitBash on Windows (non UNIX) Operating Systems. Any commands I've listed here are based on UNIX (git bash) shell commands. 
   If you want to install GitBash: https://gitforwindows.org/
 
-Installation Order and Running the Script: 
+Installation Order and Running the Scripts: 
 
 1) Install NodeJS first, then follow the instructions to install Puppeteer using Node Package Manager (NPM)
 2) Create a new folder/directory on your computer where you'd like to store this project's code. The resulting CSV files with the Google Review Scores will be written to this directory!

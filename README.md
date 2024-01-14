@@ -7,11 +7,13 @@ When complete, you can copy paste from both CSV files into your preferred Excel 
 Install the following dependencies if you do not have these already installed on your local machine:
 
 Dependencies: 
--NodeJS (javascript runtime to allow you to run the program on your local machine): https://nodejs.org/en
--PuppeteerJS (testing/webscraping library to call the special webscraping functions): https://pptr.dev/
--a terminal to run the scripts using Node commands. I recommend using GitBash on Windows (non UNIX) Operating Systems. Any commands I've listed here are based on UNIX (git bash) shell commands. 
+
+1) NodeJS (javascript runtime to allow you to run the program on your local machine): https://nodejs.org/en
+2) PuppeteerJS (testing/webscraping library to call the special webscraping functions): https://pptr.dev/
+3) terminal to run the scripts using Node commands. I recommend using GitBash on Windows (non UNIX) Operating Systems. Any commands I've listed here are based on UNIX (git bash) shell commands. 
   If you want to install GitBash: https://gitforwindows.org/
 
+Installation Order and Running the Script: 
 
 1) Install NodeJS first, then follow the instructions to install Puppeteer using Node Package Manager (NPM)
 2) Create a new folder/directory on your computer where you'd like to store this project's code. The resulting CSV files with the Google Review Scores will be written to this directory!

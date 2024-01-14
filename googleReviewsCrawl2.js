@@ -14,21 +14,17 @@ try {
       await page2.goto(`${url2}`, { timeout: 0 });
       await page2.waitForNavigation({ waitUntil: "networkidle2" });
 
-      //Update with new elements for the property google reviews
       const score2 = await page2.evaluate(() => {
         return Array.from(
           document.querySelectorAll(
-            //"div.fYOrjf.kp-hc > div:nth-child(2) > div > div > span.Aq14fc"
             "div.F7nice > span:nth-child(1) > span:nth-child(1)"
           )
         ).map((x) => x.textContent);
       });
 
-      //Update with new elements for the property google reviews
       const totalCount2 = await page2.evaluate(() => {
         return Array.from(
           document.querySelectorAll(
-            //"div.fYOrjf.kp-hc > div:nth-child(2) > div > div > span.hqzQac > span > a > span"
             "div.F7nice > span:nth-child(2) > span > span"
           )
         ).map((x) => x.textContent);

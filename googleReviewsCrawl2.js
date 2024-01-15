@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs/promises");
-const propURLs2 = require("./propURLList2");
+const propURLs2 = require("./URL_LISTS/propURLList2");
 
 //Scrape round 2 to prevent timeout error:
 
@@ -51,7 +51,7 @@ try {
     }
   }
 
-  console.log("scrap initiated");
+  console.log("scrape initiated");
 
   start();
 } catch {

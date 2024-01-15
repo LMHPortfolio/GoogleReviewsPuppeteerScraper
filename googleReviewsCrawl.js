@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs/promises");
-const propURLs = require("./propURLList");
+const propURLs = require("./URL_LISTS/propURLList");
 
 //Scrape part 1:
 
@@ -51,7 +51,7 @@ try {
     }
   }
 
-  console.log("scrap initiated");
+  console.log("scrape initiated");
 
   start();
 } catch {

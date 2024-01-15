@@ -269,8 +269,6 @@ const propURLs = [
     name: "Lexington Court",
     url: "https://maps.app.goo.gl/nK6NfbJTkgGt7r2P9",
   },
-
-  //part 2:
 ];
 
 module.exports = propURLs;

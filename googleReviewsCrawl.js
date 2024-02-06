@@ -47,6 +47,13 @@ try {
         `${formattedResult} \n`,
         { flag: "a" }
       );
+
+      if (propURLs.length - 1 > i) {
+        console.log("---running---");
+      } else {
+        console.log("complete. run part 2 after 30secs");
+      }
+
       await browser.close();
     }
   }

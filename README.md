@@ -48,15 +48,18 @@ While the program is running, you will see --running-- in your terminal. You can
 
 In the instance that you need to STOP the program from running, type CONTROL+C into the terminal. Think of this as the emergency break. Otherwise, just wait for the CSV file write process to be complete.
 
-6.  Once your first scrape/file write is complete, you can begin the second. I recommend waiting at least 30 seconds before running the second script.
-    Begin running part 2 with the following command in the terminal:
+6.  When the first scrape is done, you will be greeted with the following in the terminal:
+
+        complete. run part 2 after 30secs
+
+Once your first scrape/file write is complete, you can begin the second. I recommend waiting at least 30 seconds before running the second script to avoid timeout errors but you can take as much time as you like.
+
+      Begin running part 2 with the following command in the terminal:
 
         node googleReviewsCrawl2
 
-This process is identical to the first round, and will output a "GoogleReviewCount2.csv" file.
+This process is identical to the first round, and will output a "GoogleReviewCount2.csv" file. When the scrape is completed, you will receive confirmation in the terminal.
 
-7. When both your CSV files are completed (you can check against the url lists in the "propURLList" and "propURLList2" files that have the lists in JSON format), you can easily open the CSVs in Excel or Google Sheets
-   and copy paste to your desired final sheet/format.
+7. When both your CSV files are completed (can check against the url lists in the "propURLList" and "propURLList2" files that have the lists in JSON format), you can easily open the CSVs in Excel or Google Sheets and copy paste to your desired final sheet/format.
 
-8. Any errors or change requests should be referred to the author. This includes any changes needed to the list of URLS or to the actual JavaScript logic contained in the project.
-   Changes need to be tracked/maintained in a remote repository to preserve version control/track change history.
+8. Any errors or change requests should be referred to the writer/repo owner. This includes any changes needed to the list of URLS or to the actual JavaScript logic contained in the project. Changes need to be tracked/maintained in a remote repository to preserve version control/track change history.

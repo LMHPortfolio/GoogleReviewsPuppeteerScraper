@@ -52,9 +52,7 @@ In the instance that you need to STOP the program from running, type CONTROL+C i
 
         complete. run part 2 after 30secs
 
-Once your first scrape/file write is complete, you can begin the second. I recommend waiting at least 30 seconds before running the second script to avoid timeout errors but you can take as much time as you like.
-
-      Begin running part 2 with the following command in the terminal:
+Once your first scrape/file write is complete, you can begin the second. I recommend waiting at least 30 seconds before running the second script to avoid timeout errors but you can take as much time as you like. Begin running part 2 with the following command in the terminal:
 
         node googleReviewsCrawl2
 

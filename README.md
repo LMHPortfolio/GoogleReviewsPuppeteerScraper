@@ -23,18 +23,18 @@ Installation Order and Running the Scripts:
 
 You should see the following output in the terminal:
 
-scrape initiated
+      scrape initiated
 
 This means the progam has STARTED successfully. Writing the results to the CSV file is gradual, but you can see the writing in real time.
 The terminal will update with:
 
---running--
+      --running--
 
 continuously while the scrape is in progress.
 
 If the program failed to start running, you will see the following error in the terminal:
 
-scrape failed
+      scrape failed
 
 Any other errors that occurr while CSV file writing is in progress will likely be Puppeteer or network timeout errors. You'll see the error reason in the terminal.
 In this instance, wait at least 30 seconds before trying to run the script again.

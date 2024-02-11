@@ -3,9 +3,9 @@ const fs = require("fs/promises");
 const propURLs2 = require("./URL_LISTS/propURLList2");
 
 //Scrape round 2 to prevent timeout error:
-
-try {
-  async function start() {
+async function start2() {
+  try {
+    console.log("starting");
     for (let i = 0; i < propURLs2.length; i++) {
       const url2 = propURLs2[i].url;
 
@@ -56,11 +56,11 @@ try {
 
       await browser2.close();
     }
+  } catch {
+    throw new Error("scrape initiation failed");
   }
-
-  console.log("scrape initiated");
-
-  start();
-} catch {
-  throw new Error("scrape initiation failed");
 }
+
+start2();
+
+module.exports = { start2 };

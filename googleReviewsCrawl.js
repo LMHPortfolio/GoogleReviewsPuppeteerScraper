@@ -3,9 +3,9 @@ const fs = require("fs/promises");
 const propURLs = require("./URL_LISTS/propURLList");
 
 //Scrape part 1:
-
-try {
-  async function start() {
+async function start() {
+  try {
+    console.log("starting");
     for (let i = 0; i < propURLs.length; i++) {
       const url = propURLs[i].url;
 
@@ -56,11 +56,11 @@ try {
 
       await browser.close();
     }
+  } catch {
+    throw new Error("scrape initiation failed");
   }
-
-  console.log("scrape initiated");
-
-  start();
-} catch {
-  throw new Error("scrape initiation failed");
 }
+
+start();
+
+module.exports = { start };

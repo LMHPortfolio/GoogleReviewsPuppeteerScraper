@@ -163,6 +163,11 @@ const propURLs2 = [
     url: "https://maps.app.goo.gl/8GjMJR5759hxPtSM9",
   },
   {
+    id: 2415,
+    name: "Deland Commons",
+    url: "https://maps.app.goo.gl/v2idGCKBTzi5bT8r8",
+  },
+  {
     id: 2417,
     name: "Townwest Senior Living",
     url: "https://maps.app.goo.gl/uNy3K4yYA3Vcw2oz9",

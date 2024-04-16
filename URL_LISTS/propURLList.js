@@ -100,7 +100,7 @@ const propURLs = [
     url: "https://maps.app.goo.gl/bTBiAU7TtpcZAPiF6",
   },
   {
-    id: 2277,
+    id: 2227,
     name: "Wickham Club",
     url: "https://maps.app.goo.gl/DJiXaSC7qPNDsPQ48",
   },
@@ -195,7 +195,7 @@ const propURLs = [
     url: "https://maps.app.goo.gl/kicdKu5n56C4RymC7",
   },
   {
-    id: 2297,
+    id: 2302,
     name: "Lake Sherwood",
     url: "https://maps.app.goo.gl/bBpxjhrhV1SvDaiC9",
   },

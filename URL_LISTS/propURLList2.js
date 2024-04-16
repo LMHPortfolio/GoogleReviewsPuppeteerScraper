@@ -63,7 +63,7 @@ const propURLs2 = [
     url: "https://maps.app.goo.gl/9YJWxWKzM7zpWTHx7",
   },
   {
-    id: 2362,
+    id: 2363,
     name: "Goldenrod Pointe",
     url: "https://maps.app.goo.gl/Gj9Q6nV7XqY1a6Zz6",
   },
@@ -158,8 +158,8 @@ const propURLs2 = [
     url: "https://maps.app.goo.gl/4gX4N9ABDidvDXpz8",
   },
   {
-    id: 2405,
-    name: "Endora Reserve",
+    id: 2408,
+    name: "Eudora Reserve",
     url: "https://maps.app.goo.gl/8GjMJR5759hxPtSM9",
   },
   {

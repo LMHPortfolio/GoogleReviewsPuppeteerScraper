@@ -1,6 +1,8 @@
 This script is split into 2 parts that should be run separately. This was done to avoid timeout issues that occur when running Puppeteer too long over a single very large URL list.
 Part 1 "googleReviewsCrawl" will scrape the "propURLList" and return a CSV file with the results. Part 2 "googleReviewsCrawl2" will scrape the "propURLList2" and return a CSV file with those results.
 When complete, you can copy paste from both CSV files into your preferred Excel file.
+*NOTE I suggest here to run part2 first then part1 as I have more luck in avoiding network request failures*
+
 
 Install the following dependencies if you do not have these already installed on your local machine:
 
@@ -17,9 +19,9 @@ Installation Order and Running the Scripts:
 2. Create a new folder/directory on your computer where you'd like to store this project's code. The resulting CSV files with the Google Review Scores will be written to this directory!
 3. Download the project files into this directory, and open in your local IDE/Code editor if preferred. This makes it easy to run and view the results in real time.
 4. Make sure you have your terminal open ( >bash if you are running GitBash like me) and that you are in the correct directory. This is why running from your Code Editor/IDE makes it easier.
-5. To run the first script, type the following command (You can also run it using node ex: 'node googleReviewsCrawl'):
+5. To run the first script, type the following command (You can also run it using node ex: 'node googleReviewsCrawl2'):
 
-   npm run crawl1
+   npm run crawl2
 
 You should see the following output in the terminal:
 
@@ -40,7 +42,7 @@ Any other errors that occurr while CSV file writing is in progress will likely b
 In this instance, wait at least 30 seconds before trying to run the script again.
 Puppeteer will timeout if it runs into a navigation attempt to a URL that takes longer than 30,000ms (30secs).
 
-In your directory, you will see a CSV file created. The first one will be titled "GoogleReviewCount.csv".
+In your directory, you will see a CSV file created. The first one will be titled "GoogleReviewCount2.csv".
 If the file already exists, the program will write to that pre-existing file. It will only create a new one if it does not yet exist.
 It will not "overwrite" existing content, but it will add to what is already in a pre-existing CSV with that same name.
 I recommend renaming the file once the scrape is successful so you don't confuse different versions!
@@ -54,10 +56,10 @@ In the instance that you need to STOP the program from running, type CONTROL+C i
 
 Once your first scrape/file write is complete, you can begin the second. I recommend waiting at least 30 seconds before running the second script to avoid timeout errors but you can take as much time as you like. Begin running part 2 with the following command in the terminal:
 
-        npm run crawl2
+        npm run crawl
 
-This process is identical to the first round, and will output a "GoogleReviewCount2.csv" file. When the scrape is completed, you will receive confirmation in the terminal.
+This process is identical to the first round, and will output a "GoogleReviewCount.csv" file. When the scrape is completed, you will receive confirmation in the terminal.
 
 7. When both your CSV files are completed (can check against the url lists in the "propURLList" and "propURLList2" files that have the lists in JSON format), you can easily open the CSVs in Excel or Google Sheets and copy paste to your desired final sheet/format.
 
-8. Any errors or change requests should be referred to the author.
+

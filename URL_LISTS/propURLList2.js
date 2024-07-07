@@ -1,12 +1,10 @@
 const propURLs2 = [
   {
-    //breaker
     id: 2330,
     name: "The Hammock at Stuart Villa",
     url: "https://maps.app.goo.gl/VXVm51EGVwsqqrEv5",
   },
   {
-    //breaker
     id: 2331,
     name: "Village Park Senior Living",
     url: "https://maps.app.goo.gl/ccz2eEzuCtM6bR9s5",

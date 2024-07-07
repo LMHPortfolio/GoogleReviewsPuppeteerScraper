@@ -32,7 +32,7 @@ const propURLs = [
   {
     id: 2084,
     name: "Waterford East",
-    url: "https://maps.app.goo.gl/UZkrqL7rLGQm6rsu8",
+    url: "https://maps.app.goo.gl/vbGo4E8xHGeyFiXBA",
   },
   {
     id: 2103,
